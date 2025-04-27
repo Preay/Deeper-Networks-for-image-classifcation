@@ -80,5 +80,12 @@ def train_model(model, train_loader, val_loader, epochs=20, lr=0.001, model_name
 
     with open(log_file, "a") as f:
         f.write(f"\nTraining finished at {datetime.now()}\n")
+
+
+    # Save model
+    os.makedirs(log_dir, exist_ok=True)
+    model_save_path = os.path.join(log_dir, f"{model_name}_model.pth")
+    torch.save(model.state_dict(), model_save_path)
+    print(f"\n✅ Saved {model_name} model to {model_save_path}")
     
     return train_losses, val_losses, train_accuracies, val_accuracies

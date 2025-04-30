@@ -1,0 +1,10 @@
+Training started at 2025-04-30 01:42:29.481684
+Model: ResNet18
+
+Epoch [1/5] - Train Loss: 0.0962 Train Acc: 97.06% | Val Loss: 0.0446 Val Acc: 98.60%
+Epoch [2/5] - Train Loss: 0.0389 Train Acc: 98.79% | Val Loss: 0.0286 Val Acc: 99.06%
+Epoch [3/5] - Train Loss: 0.0302 Train Acc: 99.08% | Val Loss: 0.0304 Val Acc: 99.01%
+Epoch [4/5] - Train Loss: 0.0211 Train Acc: 99.35% | Val Loss: 0.0168 Val Acc: 99.42%
+Epoch [5/5] - Train Loss: 0.0194 Train Acc: 99.40% | Val Loss: 0.0238 Val Acc: 99.23%
+
+Training finished at 2025-04-30 01:50:18.897139

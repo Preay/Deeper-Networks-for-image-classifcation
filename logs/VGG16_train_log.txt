@@ -1,3 +1,4 @@
-Training started at 2025-04-28 00:44:28.741320
+Training started at 2025-04-29 21:47:42.639899
 Model: VGG16
 
+Epoch [1/20] - Train Loss: 2.5089 Train Acc: 11.09% | Val Loss: 2.3012 Val Acc: 11.35%

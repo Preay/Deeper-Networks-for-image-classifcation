@@ -1,6 +1,19 @@
 # utils.py
 import matplotlib.pyplot as plt
 import os
+import torch
+
+def load_model(model, model_path):
+    """
+    Loads a model's weights from a given path.
+    Args:
+        model: The model architecture (should match the saved weights).
+        model_path: Path to the saved .pth file
+    """
+    model.load_state_dict(torch.load(model_path))
+    model.eval()  # Set model to evaluation mode
+    print(f"✅ Loaded model from {model_path}")
+    return model
 
 def plot_training_curves(train_losses, val_losses, train_accuracies, val_accuracies, model_name="model", results_dir="./results/"):
     os.makedirs(results_dir, exist_ok=True)
